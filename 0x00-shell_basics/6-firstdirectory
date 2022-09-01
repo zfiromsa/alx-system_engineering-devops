@@ -1,2 +1,2 @@
-#!/bim/bash
-mkdir /root/tmp/my_first_director
+#!/bin/bash
+mkdir tmp/my_first_director
