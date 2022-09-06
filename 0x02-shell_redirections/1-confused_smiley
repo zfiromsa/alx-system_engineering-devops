@@ -1,2 +1,2 @@
 #!/bin/bash
-echo '$("(Oo)')' > 1-confused_smiley
+echo "\"(Oo)'"
