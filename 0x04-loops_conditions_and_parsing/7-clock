@@ -13,4 +13,5 @@ do
     echo "Hour: $hour"
     hour=$((hour+1))
 done
+ 
         
