@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+# This script is displaying In a list format
+for f in $(ls)
+do
+  printf "$f\n"
+done
