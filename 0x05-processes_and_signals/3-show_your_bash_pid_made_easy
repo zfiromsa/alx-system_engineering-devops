@@ -1,4 +1,4 @@
-#!/bin/env bash
+#!/usr/bin/env bash
 #a Bash script that displays the PID, along with the process name, of processes 
 for pid in /proc/*/status;
 do
