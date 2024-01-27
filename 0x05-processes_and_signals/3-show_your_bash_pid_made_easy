@@ -1,0 +1,9 @@
+#!/bin/env bash
+for pid in /proc/*/status;
+do
+    if grep -q "Name:.*bash" "$pid";
+    then
+        awk '/^Pid/{pid=$2} /^Name/{name=$2} END{print pid, name}' "$pid"
+    fi
+done
+
