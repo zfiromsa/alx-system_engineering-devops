@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
-#stopped our 4-to_infinity_and_beyond process using ctrl+c
-killall "4-to_infinity_and_beyond"
+#stopped our 4-to_infinity_and_beyond process
+kill $(4-to_infinity_and_beyond)
 
