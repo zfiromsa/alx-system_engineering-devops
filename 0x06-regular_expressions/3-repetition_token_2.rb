@@ -1,7 +1,7 @@
 #!/usr/bin/env ruby
 word = ARGV[0]
 def match_expression?(word)
-    reg_exp = /hb?tn/
+    reg_exp = /hbt+n/
 
     if word.match?(reg_exp)
         puts "#{word}"
