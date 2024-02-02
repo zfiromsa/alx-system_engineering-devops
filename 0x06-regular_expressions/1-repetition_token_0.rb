@@ -1,13 +1,3 @@
 #!/usr/bin/env ruby
-word = ARGV[0]
-def match_expression?(word)
-    reg_exp = /hbt{2,5}n/
+put ARGV[0].scan(/hbt{2,5}n/).join
 
-    if word.match?(reg_exp)
-        puts "#{word}"
-    else
-        puts ""
-    end
-end
-
-match_expression?(word)
