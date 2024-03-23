@@ -1,9 +1,9 @@
 #!/bin/bash
 
-# Using Puppet, create a manifest that kills a process named killmenow.
+# Using Puppet, install flask from pip3.
 
-exec { 'kill_killmenow_process':
-    command => 'pkill -f killmenow',
-    onlyif => 'pgrep -f killmenow',
+package { ''flask':
+    ensure => '2.1.0',
+    provider => 'pip3'
 }
 
