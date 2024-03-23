@@ -1,4 +1,4 @@
-#!/usr/bin/env Puppet
+#!/bin/bash
 
 # Puppet manifest to create a file in /tmp with 
 # specific permissions, owner, and group.

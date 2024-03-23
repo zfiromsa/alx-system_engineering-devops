@@ -1,4 +1,4 @@
-#!/usr/bin/env Puppet
+#!/bin/bash
 
 # Using Puppet, create a manifest that kills a process named killmenow.
 

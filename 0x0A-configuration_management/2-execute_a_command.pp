@@ -1,4 +1,4 @@
-#!/usr/bin/env Puppet
+#!/bin/bash
 
 # Using Puppet, install flask from pip3.
 
