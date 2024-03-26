@@ -1,8 +1,5 @@
-#!/bin/bash
-
 # Puppet manifest to create a file in /tmp with 
 # specific permissions, owner, and group.
-
 file { '/tmp/school':
 ensure => file,
 mode => '0744',
