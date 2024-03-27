@@ -1,10 +1,11 @@
-# Puppet manifest to create a file in /tmp with
-# specific permissions, owner, and group.
-file { '/tmp/school':
-ensure  => file,
+#Create a file in /tmp
+
+file { 'school':
+ensure  => 'present',
+path    => '/tmp/school',
 mode    => '0744',
 owner   => 'www-data',
 group   => 'www-data',
-content => "I love Puppet"
+content => 'I love Puppet'
 }
 
