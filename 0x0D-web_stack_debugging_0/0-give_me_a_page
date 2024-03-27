@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+
+# Enter the Docker container
+docker exec -it CONTAINER_ID /bin/bash
+
+# Replace the default index.html file with a new containing "Hello Holberton"
+echo "Hello Holberton" > /var/www/html/index.html
+
+# Restart Apache
+service apache2 restart
+
