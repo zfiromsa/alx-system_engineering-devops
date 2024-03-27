@@ -1,5 +1,3 @@
-#!/usr/bin/env bash
-
 # Enter the Docker container
 docker exec -it CONTAINER_ID /bin/bash
 
