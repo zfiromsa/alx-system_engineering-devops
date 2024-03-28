@@ -1,33 +1,11 @@
 #!/usr/bin/env bash
 
-# Check if Docker container ID is provided as argument
-if [ $# -eq 0 ]; then
-    echo "Usage: $0 CONTAINER_ID"
-    exit 1
-fi
-
-CONTAINER_ID=$1
-
 # Enter the Docker container
-docker exec -it "$CONTAINER_ID" /bin/bash
-if [ $? -ne 0 ]; then
-    echo "Failed to enter the Docker container."
-    exit 1
-fi
+docker exec -it CONTAINER_ID /bin/bash
 
-# Replace the default index.html file with a new one containing "Hello Holberton"
+# Replace the default index.html file with a new containing "Hello Holberton"
 echo "Hello Holberton" > /var/www/html/index.html
-if [ $? -ne 0 ]; then
-    echo "Failed to create/update index.html."
-    exit 1
-fi
 
 # Restart Apache
 service apache2 restart
-if [ $? -ne 0 ]; then
-    echo "Failed to restart Apache."
-    exit 1
-fi
-
-echo "Apache restarted successfully."
 
