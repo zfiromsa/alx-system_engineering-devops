@@ -1,0 +1,6 @@
+Host your_server
+    HostName your_server_hostname_or_IP
+    User your_username
+    IdentityFile ~/.ssh/school
+    PasswordAuthentication no
+
