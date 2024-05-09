@@ -4,6 +4,8 @@ of the first 10 hot posts listed for a given subreddit."""
 
 
 import requests
+import sys
+
 
 def top_ten(subreddit):
     """function that queries the Reddit API and prints the titles
@@ -24,8 +26,8 @@ def top_ten(subreddit):
         elif response.status_code == 404:
             print("None")
         else:
-            print(f"Error: {response.status_code}")
+            print("None")
     except Exception as e:
-        print(f"Error: {e}")
+        print("None")
 
 
